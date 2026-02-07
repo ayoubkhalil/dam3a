@@ -1,0 +1,711 @@
+[2026-02-07 02:00:41] local.ERROR: could not find driver (Connection: sqlite, SQL: PRAGMA foreign_keys = ON;) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 0): could not find driver (Connection: sqlite, SQL: PRAGMA foreign_keys = ON;) at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connection.php:829)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connection.php(783): Illuminate/Database/Connection->runQueryCallback('PRAGMA foreign_...', Array, Object(Closure))
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connection.php(576): Illuminate/Database/Connection->run('PRAGMA foreign_...', Array, Object(Closure))
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(560): Illuminate/Database/Connection->statement('PRAGMA foreign_...')
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php(36): Illuminate/Database/Schema/Builder->enableForeignKeyConstraints()
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate/Database/SQLiteConnection->__construct(Object(Closure), 'database/databa...', '', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(75): Illuminate/Database/Connectors/ConnectionFactory->createConnection('sqlite', Object(Closure), 'database/databa...', '', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate/Database/Connectors/ConnectionFactory->createSingleConnection(Array)
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(175): Illuminate/Database/Connectors/ConnectionFactory->make(Array, 'sqlite')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(101): Illuminate/Database/DatabaseManager->makeConnection('sqlite')
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(226): Illuminate/Database/DatabaseManager->connection('sqlite')
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(182): Illuminate/Database/Migrations/DatabaseMigrationRepository->getConnection()
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(727): Illuminate/Database/Migrations/DatabaseMigrationRepository->repositoryExists()
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(140): Illuminate/Database/Migrations/Migrator->repositoryExists()
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/helpers.php(261): Illuminate/Database/Console/Migrations/MigrateCommand->Illuminate/Database/Console/Migrations/{closure}(1)
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(140): retry(1, Object(Closure), 0, Object(Closure))
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate/Database/Console/Migrations/MigrateCommand->repositoryExists()
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(84): Illuminate/Database/Console/Migrations/MigrateCommand->prepareDatabase()
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(641): Illuminate/Database/Console/Migrations/MigrateCommand->Illuminate/Database/Console/Migrations/{closure}()
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(83): Illuminate/Database/Migrations/Migrator->usingConnection(NULL, Object(Closure))
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Database/Console/Migrations/MigrateCommand->handle()
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/symfony/console/Command/Command.php(326): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/symfony/console/Application.php(1106): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/symfony/console/Application.php(324): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Database/Console/Migrations/MigrateCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#29 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/symfony/console/Application.php(175): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/artisan(35): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#32 {main}
+
+[previous exception] [object] (PDOException(code: 0): could not find driver at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:65)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(65): PDO->__construct('sqlite:C://Users...', NULL, Object(SensitiveParameterValue), Array)
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(44): Illuminate/Database/Connectors/Connector->createPdoConnection('sqlite:C://Users...', NULL, NULL, Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/SQLiteConnector.php(37): Illuminate/Database/Connectors/Connector->createConnection('sqlite:C://Users...', Array, Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(221): Illuminate/Database/Connectors/SQLiteConnector->connect(Array)
+#4 [internal function]: Illuminate/Database/Connectors/ConnectionFactory->Illuminate/Database/Connectors/{closure}()
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1339): call_user_func(Object(Closure))
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connection.php(581): Illuminate/Database/Connection->getPdo()
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connection.php(816): Illuminate/Database/Connection->Illuminate/Database/{closure}('PRAGMA foreign_...', Array)
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connection.php(783): Illuminate/Database/Connection->runQueryCallback('PRAGMA foreign_...', Array, Object(Closure))
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connection.php(576): Illuminate/Database/Connection->run('PRAGMA foreign_...', Array, Object(Closure))
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Schema/Builder.php(560): Illuminate/Database/Connection->statement('PRAGMA foreign_...')
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/SQLiteConnection.php(36): Illuminate/Database/Schema/Builder->enableForeignKeyConstraints()
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(272): Illuminate/Database/SQLiteConnection->__construct(Object(Closure), 'database/databa...', '', Array)
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(75): Illuminate/Database/Connectors/ConnectionFactory->createConnection('sqlite', Object(Closure), 'database/databa...', '', Array)
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(50): Illuminate/Database/Connectors/ConnectionFactory->createSingleConnection(Array)
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(175): Illuminate/Database/Connectors/ConnectionFactory->make(Array, 'sqlite')
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/DatabaseManager.php(101): Illuminate/Database/DatabaseManager->makeConnection('sqlite')
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(226): Illuminate/Database/DatabaseManager->connection('sqlite')
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(182): Illuminate/Database/Migrations/DatabaseMigrationRepository->getConnection()
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(727): Illuminate/Database/Migrations/DatabaseMigrationRepository->repositoryExists()
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(140): Illuminate/Database/Migrations/Migrator->repositoryExists()
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/helpers.php(261): Illuminate/Database/Console/Migrations/MigrateCommand->Illuminate/Database/Console/Migrations/{closure}(1)
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(140): retry(1, Object(Closure), 0, Object(Closure))
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(116): Illuminate/Database/Console/Migrations/MigrateCommand->repositoryExists()
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(84): Illuminate/Database/Console/Migrations/MigrateCommand->prepareDatabase()
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(641): Illuminate/Database/Console/Migrations/MigrateCommand->Illuminate/Database/Console/Migrations/{closure}()
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(83): Illuminate/Database/Migrations/Migrator->usingConnection(NULL, Object(Closure))
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Database/Console/Migrations/MigrateCommand->handle()
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#29 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#33 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/symfony/console/Command/Command.php(326): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#35 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/symfony/console/Application.php(1106): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#36 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/symfony/console/Application.php(324): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Database/Console/Migrations/MigrateCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#37 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/symfony/console/Application.php(175): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#38 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(201): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#39 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/artisan(35): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#40 {main}
+"} 
+[2026-02-07 02:08:36] local.ERROR: Invalid route action: [App\Http\Controllers\CommunityController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\CommunityController]. at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate/Routing/RouteAction::makeInvokable('App//Http//Contro...')
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(191): Illuminate/Routing/RouteAction::parse('communities', Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(172): Illuminate/Routing/Route->parseAction(Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate/Routing/Route->__construct(Array, 'communities', Array)
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(561): Illuminate/Routing/Router->newRoute(Array, 'communities', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(541): Illuminate/Routing/Router->createRoute(Array, '/communities', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(159): Illuminate/Routing/Router->addRoute(Array, '/communities', 'App//Http//Contro...')
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate/Routing/Router->get('/communities', 'App//Http//Contro...')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(20): Illuminate/Support/Facades/Facade::__callStatic('get', Array)
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(509): Illuminate/Routing/RouteFileRegistrar->{closure}(Object(Illuminate/Routing/Router))
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes(Object(Closure))
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, Object(Closure))
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(19): Illuminate/Routing/RouteRegistrar->group(Object(Closure))
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('C://Users//Lenovo...')
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate/Routing/RouteFileRegistrar->register('C://Users//Lenovo...')
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes('C://Users//Lenovo...')
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, 'C://Users//Lenovo...')
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/app/Providers/RouteServiceProvider.php(37): Illuminate/Routing/RouteRegistrar->group('C://Users//Lenovo...')
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Providers/RouteServiceProvider->App/Providers/{closure}()
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(120): Illuminate/Container/Container->call(Object(Closure))
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(45): Illuminate/Foundation/Support/Providers/RouteServiceProvider->loadRoutes()
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Support/Providers/RouteServiceProvider->Illuminate/Foundation/Support/Providers/{closure}()
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#29 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(119): Illuminate/Container/Container->call(Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1062): Illuminate/Support/ServiceProvider->callBootedCallbacks()
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1040): Illuminate/Foundation/Application->bootProvider(Object(App/Providers/RouteServiceProvider))
+#33 [internal function]: Illuminate/Foundation/Application->Illuminate/Foundation/{closure}(Object(App/Providers/RouteServiceProvider), 26)
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1039): array_walk(Array, Object(Closure))
+#35 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate/Foundation/Application->boot()
+#36 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(286): Illuminate/Foundation/Bootstrap/BootProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#37 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(447): Illuminate/Foundation/Application->bootstrapWith(Array)
+#38 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate/Foundation/Console/Kernel->bootstrap()
+#39 Command line code(1): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#40 {main}
+"} 
+[2026-02-07 02:09:24] local.ERROR: Invalid route action: [App\Http\Controllers\CommunityController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\CommunityController]. at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate/Routing/RouteAction::makeInvokable('App//Http//Contro...')
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(191): Illuminate/Routing/RouteAction::parse('communities', Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(172): Illuminate/Routing/Route->parseAction(Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate/Routing/Route->__construct(Array, 'communities', Array)
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(561): Illuminate/Routing/Router->newRoute(Array, 'communities', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(541): Illuminate/Routing/Router->createRoute(Array, '/communities', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(159): Illuminate/Routing/Router->addRoute(Array, '/communities', 'App//Http//Contro...')
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate/Routing/Router->get('/communities', 'App//Http//Contro...')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(20): Illuminate/Support/Facades/Facade::__callStatic('get', Array)
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(509): Illuminate/Routing/RouteFileRegistrar->{closure}(Object(Illuminate/Routing/Router))
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes(Object(Closure))
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, Object(Closure))
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(19): Illuminate/Routing/RouteRegistrar->group(Object(Closure))
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('C://Users//Lenovo...')
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate/Routing/RouteFileRegistrar->register('C://Users//Lenovo...')
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes('C://Users//Lenovo...')
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, 'C://Users//Lenovo...')
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/app/Providers/RouteServiceProvider.php(37): Illuminate/Routing/RouteRegistrar->group('C://Users//Lenovo...')
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Providers/RouteServiceProvider->App/Providers/{closure}()
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(120): Illuminate/Container/Container->call(Object(Closure))
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(45): Illuminate/Foundation/Support/Providers/RouteServiceProvider->loadRoutes()
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Support/Providers/RouteServiceProvider->Illuminate/Foundation/Support/Providers/{closure}()
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#29 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(119): Illuminate/Container/Container->call(Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1062): Illuminate/Support/ServiceProvider->callBootedCallbacks()
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1040): Illuminate/Foundation/Application->bootProvider(Object(App/Providers/RouteServiceProvider))
+#33 [internal function]: Illuminate/Foundation/Application->Illuminate/Foundation/{closure}(Object(App/Providers/RouteServiceProvider), 26)
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1039): array_walk(Array, Object(Closure))
+#35 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate/Foundation/Application->boot()
+#36 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(286): Illuminate/Foundation/Bootstrap/BootProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#37 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(447): Illuminate/Foundation/Application->bootstrapWith(Array)
+#38 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate/Foundation/Console/Kernel->bootstrap()
+#39 Command line code(1): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#40 {main}
+"} 
+[2026-02-07 02:09:24] local.ERROR: Invalid route action: [App\Http\Controllers\CommunityController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\CommunityController]. at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate/Routing/RouteAction::makeInvokable('App//Http//Contro...')
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(191): Illuminate/Routing/RouteAction::parse('communities', Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(172): Illuminate/Routing/Route->parseAction(Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate/Routing/Route->__construct(Array, 'communities', Array)
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(561): Illuminate/Routing/Router->newRoute(Array, 'communities', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(541): Illuminate/Routing/Router->createRoute(Array, '/communities', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(159): Illuminate/Routing/Router->addRoute(Array, '/communities', 'App//Http//Contro...')
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate/Routing/Router->get('/communities', 'App//Http//Contro...')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(20): Illuminate/Support/Facades/Facade::__callStatic('get', Array)
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(509): Illuminate/Routing/RouteFileRegistrar->{closure}(Object(Illuminate/Routing/Router))
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes(Object(Closure))
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, Object(Closure))
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(19): Illuminate/Routing/RouteRegistrar->group(Object(Closure))
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('C://Users//Lenovo...')
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate/Routing/RouteFileRegistrar->register('C://Users//Lenovo...')
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes('C://Users//Lenovo...')
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, 'C://Users//Lenovo...')
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/app/Providers/RouteServiceProvider.php(37): Illuminate/Routing/RouteRegistrar->group('C://Users//Lenovo...')
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Providers/RouteServiceProvider->App/Providers/{closure}()
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(120): Illuminate/Container/Container->call(Object(Closure))
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(45): Illuminate/Foundation/Support/Providers/RouteServiceProvider->loadRoutes()
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Support/Providers/RouteServiceProvider->Illuminate/Foundation/Support/Providers/{closure}()
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#29 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(119): Illuminate/Container/Container->call(Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1062): Illuminate/Support/ServiceProvider->callBootedCallbacks()
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1040): Illuminate/Foundation/Application->bootProvider(Object(App/Providers/RouteServiceProvider))
+#33 [internal function]: Illuminate/Foundation/Application->Illuminate/Foundation/{closure}(Object(App/Providers/RouteServiceProvider), 26)
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1039): array_walk(Array, Object(Closure))
+#35 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate/Foundation/Application->boot()
+#36 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(286): Illuminate/Foundation/Bootstrap/BootProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#37 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(447): Illuminate/Foundation/Application->bootstrapWith(Array)
+#38 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate/Foundation/Console/Kernel->bootstrap()
+#39 Command line code(1): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#40 {main}
+"} 
+[2026-02-07 02:58:58] local.ERROR: Invalid route action: [App\Http\Controllers\HomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\HomeController]. at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate/Routing/RouteAction::makeInvokable('App//Http//Contro...')
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(191): Illuminate/Routing/RouteAction::parse('/', Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(172): Illuminate/Routing/Route->parseAction(Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate/Routing/Route->__construct(Array, '/', Array)
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(561): Illuminate/Routing/Router->newRoute(Array, '/', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(541): Illuminate/Routing/Router->createRoute(Array, '/', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(159): Illuminate/Routing/Router->addRoute(Array, '/', 'App//Http//Contro...')
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate/Routing/Router->get('/', 'App//Http//Contro...')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(10): Illuminate/Support/Facades/Facade::__callStatic('get', Array)
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('C://Users//Lenovo...')
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate/Routing/RouteFileRegistrar->register('C://Users//Lenovo...')
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes('C://Users//Lenovo...')
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, 'C://Users//Lenovo...')
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/app/Providers/RouteServiceProvider.php(37): Illuminate/Routing/RouteRegistrar->group('C://Users//Lenovo...')
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Providers/RouteServiceProvider->App/Providers/{closure}()
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(120): Illuminate/Container/Container->call(Object(Closure))
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(45): Illuminate/Foundation/Support/Providers/RouteServiceProvider->loadRoutes()
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Support/Providers/RouteServiceProvider->Illuminate/Foundation/Support/Providers/{closure}()
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(119): Illuminate/Container/Container->call(Object(Closure))
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1062): Illuminate/Support/ServiceProvider->callBootedCallbacks()
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1040): Illuminate/Foundation/Application->bootProvider(Object(App/Providers/RouteServiceProvider))
+#29 [internal function]: Illuminate/Foundation/Application->Illuminate/Foundation/{closure}(Object(App/Providers/RouteServiceProvider), 26)
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1039): array_walk(Array, Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate/Foundation/Application->boot()
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(286): Illuminate/Foundation/Bootstrap/BootProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#33 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(447): Illuminate/Foundation/Application->bootstrapWith(Array)
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate/Foundation/Console/Kernel->bootstrap()
+#35 Command line code(1): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#36 {main}
+"} 
+[2026-02-07 02:59:03] local.ERROR: Invalid route action: [App\Http\Controllers\HomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\HomeController]. at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate/Routing/RouteAction::makeInvokable('App//Http//Contro...')
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(191): Illuminate/Routing/RouteAction::parse('/', Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(172): Illuminate/Routing/Route->parseAction(Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate/Routing/Route->__construct(Array, '/', Array)
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(561): Illuminate/Routing/Router->newRoute(Array, '/', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(541): Illuminate/Routing/Router->createRoute(Array, '/', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(159): Illuminate/Routing/Router->addRoute(Array, '/', 'App//Http//Contro...')
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate/Routing/Router->get('/', 'App//Http//Contro...')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(10): Illuminate/Support/Facades/Facade::__callStatic('get', Array)
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('C://Users//Lenovo...')
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate/Routing/RouteFileRegistrar->register('C://Users//Lenovo...')
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes('C://Users//Lenovo...')
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, 'C://Users//Lenovo...')
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/app/Providers/RouteServiceProvider.php(37): Illuminate/Routing/RouteRegistrar->group('C://Users//Lenovo...')
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Providers/RouteServiceProvider->App/Providers/{closure}()
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(120): Illuminate/Container/Container->call(Object(Closure))
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(45): Illuminate/Foundation/Support/Providers/RouteServiceProvider->loadRoutes()
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Support/Providers/RouteServiceProvider->Illuminate/Foundation/Support/Providers/{closure}()
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(119): Illuminate/Container/Container->call(Object(Closure))
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1062): Illuminate/Support/ServiceProvider->callBootedCallbacks()
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1040): Illuminate/Foundation/Application->bootProvider(Object(App/Providers/RouteServiceProvider))
+#29 [internal function]: Illuminate/Foundation/Application->Illuminate/Foundation/{closure}(Object(App/Providers/RouteServiceProvider), 26)
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1039): array_walk(Array, Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate/Foundation/Application->boot()
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(286): Illuminate/Foundation/Bootstrap/BootProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#33 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(447): Illuminate/Foundation/Application->bootstrapWith(Array)
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate/Foundation/Console/Kernel->bootstrap()
+#35 Command line code(1): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#36 {main}
+"} 
+[2026-02-07 02:59:06] local.ERROR: Invalid route action: [App\Http\Controllers\HomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\HomeController]. at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate/Routing/RouteAction::makeInvokable('App//Http//Contro...')
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(191): Illuminate/Routing/RouteAction::parse('/', Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(172): Illuminate/Routing/Route->parseAction(Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate/Routing/Route->__construct(Array, '/', Array)
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(561): Illuminate/Routing/Router->newRoute(Array, '/', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(541): Illuminate/Routing/Router->createRoute(Array, '/', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(159): Illuminate/Routing/Router->addRoute(Array, '/', 'App//Http//Contro...')
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate/Routing/Router->get('/', 'App//Http//Contro...')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(10): Illuminate/Support/Facades/Facade::__callStatic('get', Array)
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('C://Users//Lenovo...')
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate/Routing/RouteFileRegistrar->register('C://Users//Lenovo...')
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes('C://Users//Lenovo...')
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, 'C://Users//Lenovo...')
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/app/Providers/RouteServiceProvider.php(37): Illuminate/Routing/RouteRegistrar->group('C://Users//Lenovo...')
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Providers/RouteServiceProvider->App/Providers/{closure}()
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(120): Illuminate/Container/Container->call(Object(Closure))
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(45): Illuminate/Foundation/Support/Providers/RouteServiceProvider->loadRoutes()
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Support/Providers/RouteServiceProvider->Illuminate/Foundation/Support/Providers/{closure}()
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(119): Illuminate/Container/Container->call(Object(Closure))
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1062): Illuminate/Support/ServiceProvider->callBootedCallbacks()
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1040): Illuminate/Foundation/Application->bootProvider(Object(App/Providers/RouteServiceProvider))
+#29 [internal function]: Illuminate/Foundation/Application->Illuminate/Foundation/{closure}(Object(App/Providers/RouteServiceProvider), 26)
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1039): array_walk(Array, Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate/Foundation/Application->boot()
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(286): Illuminate/Foundation/Bootstrap/BootProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#33 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(447): Illuminate/Foundation/Application->bootstrapWith(Array)
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate/Foundation/Console/Kernel->bootstrap()
+#35 Command line code(1): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#36 {main}
+"} 
+[2026-02-07 02:59:06] local.ERROR: Invalid route action: [App\Http\Controllers\HomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\HomeController]. at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate/Routing/RouteAction::makeInvokable('App//Http//Contro...')
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(191): Illuminate/Routing/RouteAction::parse('/', Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(172): Illuminate/Routing/Route->parseAction(Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate/Routing/Route->__construct(Array, '/', Array)
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(561): Illuminate/Routing/Router->newRoute(Array, '/', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(541): Illuminate/Routing/Router->createRoute(Array, '/', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(159): Illuminate/Routing/Router->addRoute(Array, '/', 'App//Http//Contro...')
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate/Routing/Router->get('/', 'App//Http//Contro...')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(10): Illuminate/Support/Facades/Facade::__callStatic('get', Array)
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('C://Users//Lenovo...')
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate/Routing/RouteFileRegistrar->register('C://Users//Lenovo...')
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes('C://Users//Lenovo...')
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, 'C://Users//Lenovo...')
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/app/Providers/RouteServiceProvider.php(37): Illuminate/Routing/RouteRegistrar->group('C://Users//Lenovo...')
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Providers/RouteServiceProvider->App/Providers/{closure}()
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(120): Illuminate/Container/Container->call(Object(Closure))
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(45): Illuminate/Foundation/Support/Providers/RouteServiceProvider->loadRoutes()
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Support/Providers/RouteServiceProvider->Illuminate/Foundation/Support/Providers/{closure}()
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(119): Illuminate/Container/Container->call(Object(Closure))
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1062): Illuminate/Support/ServiceProvider->callBootedCallbacks()
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1040): Illuminate/Foundation/Application->bootProvider(Object(App/Providers/RouteServiceProvider))
+#29 [internal function]: Illuminate/Foundation/Application->Illuminate/Foundation/{closure}(Object(App/Providers/RouteServiceProvider), 26)
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1039): array_walk(Array, Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate/Foundation/Application->boot()
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(286): Illuminate/Foundation/Bootstrap/BootProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#33 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(447): Illuminate/Foundation/Application->bootstrapWith(Array)
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate/Foundation/Console/Kernel->bootstrap()
+#35 Command line code(1): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#36 {main}
+"} 
+[2026-02-07 03:00:07] local.ERROR: Invalid route action: [App\Http\Controllers\HomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\HomeController]. at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate/Routing/RouteAction::makeInvokable('App//Http//Contro...')
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(191): Illuminate/Routing/RouteAction::parse('/', Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(172): Illuminate/Routing/Route->parseAction(Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate/Routing/Route->__construct(Array, '/', Array)
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(561): Illuminate/Routing/Router->newRoute(Array, '/', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(541): Illuminate/Routing/Router->createRoute(Array, '/', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(159): Illuminate/Routing/Router->addRoute(Array, '/', 'App//Http//Contro...')
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate/Routing/Router->get('/', 'App//Http//Contro...')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(10): Illuminate/Support/Facades/Facade::__callStatic('get', Array)
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('C://Users//Lenovo...')
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate/Routing/RouteFileRegistrar->register('C://Users//Lenovo...')
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes('C://Users//Lenovo...')
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, 'C://Users//Lenovo...')
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/app/Providers/RouteServiceProvider.php(37): Illuminate/Routing/RouteRegistrar->group('C://Users//Lenovo...')
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Providers/RouteServiceProvider->App/Providers/{closure}()
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(120): Illuminate/Container/Container->call(Object(Closure))
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(45): Illuminate/Foundation/Support/Providers/RouteServiceProvider->loadRoutes()
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Support/Providers/RouteServiceProvider->Illuminate/Foundation/Support/Providers/{closure}()
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(119): Illuminate/Container/Container->call(Object(Closure))
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1062): Illuminate/Support/ServiceProvider->callBootedCallbacks()
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1040): Illuminate/Foundation/Application->bootProvider(Object(App/Providers/RouteServiceProvider))
+#29 [internal function]: Illuminate/Foundation/Application->Illuminate/Foundation/{closure}(Object(App/Providers/RouteServiceProvider), 26)
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1039): array_walk(Array, Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate/Foundation/Application->boot()
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(286): Illuminate/Foundation/Bootstrap/BootProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#33 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(447): Illuminate/Foundation/Application->bootstrapWith(Array)
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate/Foundation/Console/Kernel->bootstrap()
+#35 Command line code(1): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#36 {main}
+"} 
+[2026-02-07 03:00:07] local.ERROR: Invalid route action: [App\Http\Controllers\HomeController]. {"exception":"[object] (UnexpectedValueException(code: 0): Invalid route action: [App\\Http\\Controllers\\HomeController]. at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php:92)
+[stacktrace]
+#0 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate/Routing/RouteAction::makeInvokable('App//Http//Contro...')
+#1 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(191): Illuminate/Routing/RouteAction::parse('/', Array)
+#2 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Route.php(172): Illuminate/Routing/Route->parseAction(Array)
+#3 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(669): Illuminate/Routing/Route->__construct(Array, '/', Array)
+#4 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(561): Illuminate/Routing/Router->newRoute(Array, '/', Array)
+#5 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(541): Illuminate/Routing/Router->createRoute(Array, '/', Array)
+#6 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(159): Illuminate/Routing/Router->addRoute(Array, '/', 'App//Http//Contro...')
+#7 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(355): Illuminate/Routing/Router->get('/', 'App//Http//Contro...')
+#8 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/routes/web.php(10): Illuminate/Support/Facades/Facade::__callStatic('get', Array)
+#9 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('C://Users//Lenovo...')
+#10 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate/Routing/RouteFileRegistrar->register('C://Users//Lenovo...')
+#11 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/Router.php(465): Illuminate/Routing/Router->loadRoutes('C://Users//Lenovo...')
+#12 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(194): Illuminate/Routing/Router->group(Array, 'C://Users//Lenovo...')
+#13 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/app/Providers/RouteServiceProvider.php(37): Illuminate/Routing/RouteRegistrar->group('C://Users//Lenovo...')
+#14 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): App/Providers/RouteServiceProvider->App/Providers/{closure}()
+#15 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#16 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#17 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#18 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#19 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(120): Illuminate/Container/Container->call(Object(Closure))
+#20 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(45): Illuminate/Foundation/Support/Providers/RouteServiceProvider->loadRoutes()
+#21 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Support/Providers/RouteServiceProvider->Illuminate/Foundation/Support/Providers/{closure}()
+#22 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#23 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(81): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#24 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Object(Closure), Object(Closure))
+#25 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Container/Container.php(662): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Object(Closure), Array, NULL)
+#26 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(119): Illuminate/Container/Container->call(Object(Closure))
+#27 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1062): Illuminate/Support/ServiceProvider->callBootedCallbacks()
+#28 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1040): Illuminate/Foundation/Application->bootProvider(Object(App/Providers/RouteServiceProvider))
+#29 [internal function]: Illuminate/Foundation/Application->Illuminate/Foundation/{closure}(Object(App/Providers/RouteServiceProvider), 26)
+#30 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1039): array_walk(Array, Object(Closure))
+#31 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate/Foundation/Application->boot()
+#32 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(286): Illuminate/Foundation/Bootstrap/BootProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#33 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(447): Illuminate/Foundation/Application->bootstrapWith(Array)
+#34 C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(199): Illuminate/Foundation/Console/Kernel->bootstrap()
+#35 Command line code(1): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#36 {main}
+"} 
+[2026-02-07 03:36:50] local.ERROR: Gemini API error {"body":"{
+  \"error\": {
+    \"code\": 404,
+    \"message\": \"models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\",
+    \"status\": \"NOT_FOUND\"
+  }
+}
+","status":404} 
+[2026-02-07 03:37:03] local.ERROR: Gemini API error {"body":"{
+  \"error\": {
+    \"code\": 404,
+    \"message\": \"models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\",
+    \"status\": \"NOT_FOUND\"
+  }
+}
+","status":404} 
+[2026-02-07 03:44:56] local.ERROR: Gemini API error {"status":404,"body":"{
+  \"error\": {
+    \"code\": 404,
+    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\",
+    \"status\": \"NOT_FOUND\"
+  }
+}
+","model":"gemini-1.5-flash"} 
+[2026-02-07 03:50:35] local.ERROR: Gemini API error {"status":404,"body":"{
+  \"error\": {
+    \"code\": 404,
+    \"message\": \"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.\",
+    \"status\": \"NOT_FOUND\"
+  }
+}
+","model":"gemini-1.5-flash"} 
+[2026-02-07 03:53:05] local.ERROR: Gemini API error {"status":429,"body":"{
+  \"error\": {
+    \"code\": 429,
+    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 54.775799155s.\",
+    \"status\": \"RESOURCE_EXHAUSTED\",
+    \"details\": [
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.Help\",
+        \"links\": [
+          {
+            \"description\": \"Learn more about Gemini API quotas\",
+            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",
+        \"violations\": [
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",
+            \"quotaId\": \"GenerateContentInputTokensPerModelPerMinute-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"model\": \"gemini-2.0-flash\",
+              \"location\": \"global\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",
+        \"retryDelay\": \"54s\"
+      }
+    ]
+  }
+}
+","model":"gemini-2.0-flash"} 
+[2026-02-07 03:54:52] local.ERROR: Gemini API error {"status":429,"body":"{
+  \"error\": {
+    \"code\": 429,
+    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 7.687112374s.\",
+    \"status\": \"RESOURCE_EXHAUSTED\",
+    \"details\": [
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.Help\",
+        \"links\": [
+          {
+            \"description\": \"Learn more about Gemini API quotas\",
+            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",
+        \"violations\": [
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"model\": \"gemini-2.0-flash\",
+              \"location\": \"global\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",
+            \"quotaId\": \"GenerateContentInputTokensPerModelPerMinute-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",
+        \"retryDelay\": \"7s\"
+      }
+    ]
+  }
+}
+","model":"gemini-2.0-flash"} 
+[2026-02-07 03:57:31] local.ERROR: Gemini API error {"status":429,"body":"{
+  \"error\": {
+    \"code\": 429,
+    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\nPlease retry in 28.891946433s.\",
+    \"status\": \"RESOURCE_EXHAUSTED\",
+    \"details\": [
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.Help\",
+        \"links\": [
+          {
+            \"description\": \"Learn more about Gemini API quotas\",
+            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",
+        \"violations\": [
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"model\": \"gemini-2.0-flash\",
+              \"location\": \"global\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"model\": \"gemini-2.0-flash\",
+              \"location\": \"global\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",
+            \"quotaId\": \"GenerateContentInputTokensPerModelPerMinute-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",
+        \"retryDelay\": \"28s\"
+      }
+    ]
+  }
+}
+","model":"gemini-2.0-flash"} 
+[2026-02-07 04:00:17] local.ERROR: Gemini API error {"status":429,"body":"{
+  \"error\": {
+    \"code\": 429,
+    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\\nPlease retry in 42.523449939s.\",
+    \"status\": \"RESOURCE_EXHAUSTED\",
+    \"details\": [
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.Help\",
+        \"links\": [
+          {
+            \"description\": \"Learn more about Gemini API quotas\",
+            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",
+        \"violations\": [
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\",
+            \"quotaId\": \"GenerateContentInputTokensPerModelPerMinute-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"location\": \"global\",
+              \"model\": \"gemini-2.0-flash\"
+            }
+          },
+          {
+            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_content_free_tier_requests\",
+            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",
+            \"quotaDimensions\": {
+              \"model\": \"gemini-2.0-flash\",
+              \"location\": \"global\"
+            }
+          }
+        ]
+      },
+      {
+        \"@type\": \"type.googleapis.com/google.rpc.RetryInfo\",
+        \"retryDelay\": \"42s\"
+      }
+    ]
+  }
+}
+","model":"gemini-2.0-flash"} 
+[2026-02-07 04:07:30] local.ERROR: Hugging Face API error {"status":410,"body":"{\"error\":\"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead.\"}","model":"microsoft/Phi-4-mini-instruct"} 
+[2026-02-07 04:08:46] local.ERROR: Hugging Face API error {"status":410,"body":"{\"error\":\"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead.\"}","model":"microsoft/Phi-4-mini-instruct"} 
+[2026-02-07 04:09:17] local.ERROR: Hugging Face API error {"status":410,"body":"{\"error\":\"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead.\"}","model":"microsoft/Phi-4-mini-instruct"} 
+[2026-02-07 04:13:24] local.ERROR: Hugging Face API error {"status":410,"body":"{\"error\":\"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead.\"}","model":"google-bert/bert-base-uncased"} 
+[2026-02-07 04:19:51] local.ERROR: Hugging Face API error {"status":410,"body":"{\"error\":\"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead.\"}","model":"google-bert/bert-base-uncased"} 
+[2026-02-07 04:20:06] local.ERROR: Hugging Face API error {"status":410,"body":"{\"error\":\"https://api-inference.huggingface.co is no longer supported. Please use https://router.huggingface.co instead.\"}","model":"google-bert/bert-base-uncased"} 
+[2026-02-07 04:53:47] local.ERROR: Hugging Face API error {"status":404,"body":"Not Found","model":"Qwen/Qwen2.5-7B-Instruct"} 
+[2026-02-07 05:05:09] local.ERROR: Hugging Face API error {"status":404,"body":"Not Found","model":"Qwen/Qwen2.5-7B-Instruct"} 
+[2026-02-07 05:05:27] local.ERROR: Hugging Face API error {"status":404,"body":"Not Found","model":"Qwen/Qwen2.5-7B-Instruct"} 
+[2026-02-07 05:09:14] local.ERROR: Ollama request failed {"message":"cURL error 7: Failed to connect to localhost port 11434 after 2249 ms: Couldn't connect to server (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for http://localhost:11434/api/chat","url":"http://localhost:11434"} 
+[2026-02-07 06:11:52] local.ERROR: Ollama API error {"status":404,"body":"{\"error\":\"model 'qwen2.5:7b' not found\"}","url":"http://localhost:11434","model":"qwen2.5:7b"} 
+[2026-02-07 06:41:50] local.ERROR: Maximum execution time of 30 seconds exceeded {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:695)
+[stacktrace]
+#0 {main}
+"} 
+[2026-02-07 06:51:37] local.ERROR: Maximum execution time of 30 seconds exceeded {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:/Users/Lenovo/OneDrive - AyoubKhalil/Bureau/dam3a_pro/vendor/guzzlehttp/guzzle/src/Handler/CurlFactory.php:695)
+[stacktrace]
+#0 {main}
+"} 
